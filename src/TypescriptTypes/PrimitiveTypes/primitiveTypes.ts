@@ -1,1 +1,1 @@
-export const aSampleStringValue = 'A sample string value';
+export const aSampleStringValue = "A sample string value";
