@@ -8,10 +8,10 @@ interface APartialInterface {
 }
  export class APartialClass {
     aPartialObject: APartialInterface | undefined;
-    constructor(private aPartialArgument: Partial<APartialInterface>){
+    constructor(aPartialArgument: Partial<APartialInterface>){
         this.aPartialObject = {
             property1: '',
             property2: '',
-            ...this.aPartialArgument}
+            ...aPartialArgument}
     }
 }
