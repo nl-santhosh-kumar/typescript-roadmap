@@ -1,4 +1,4 @@
-import {  aStringValue, aBooleanFalseValue, aBooleanTrueValue, aNumberValue, anotherNumberValue, } from "./primitiveTypes";
+import {  aStringValue, aBooleanFalseValue, aBooleanTrueValue, aNumberValue, anotherNumberValue, aNullValue, anUndefinedVariable, } from "./primitiveTypes";
 
 describe("Primitive Types in Typescript", () => {
   it("should test the primitive types in Typescript", () => {
@@ -17,5 +17,13 @@ describe("Primitive Types in Typescript", () => {
     expect(typeof aNumberValue).toBe("number");
     expect(anotherNumberValue).toEqual(3.14);
     expect(typeof anotherNumberValue).toBe("number");
+  });
+
+
+  it("should test the primitive types(null) in Typescript", () => {
+    expect(aNullValue).toBeNull();
+    expect(typeof aNullValue).toEqual('object');
+    expect(anUndefinedVariable).not.toBeDefined();
+    expect(typeof anUndefinedVariable).toBe("undefined");
   });
 });
