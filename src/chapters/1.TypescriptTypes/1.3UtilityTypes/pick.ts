@@ -2,14 +2,12 @@
  * Pick constructs a type by picking the set of properties Keys 
  * (string literal or union of string literals) from Type.
  */
-export interface APickInterface {
-    property1: string;
-    property2: string;
-}
 
-export type APickType = Pick<APickInterface, 'property1'>;
+import { BookInformation } from "./common.interface";
 
-export class APickClass {
+export type APickType = Pick<BookInformation, 'pageCount'>;
+
+export class APickBookStore {
     aPickVariable: APickType | undefined;
     constructor(aPickInput: APickType){
         this.aPickVariable = aPickInput;

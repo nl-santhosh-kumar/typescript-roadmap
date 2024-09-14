@@ -1,14 +1,14 @@
-import { OmitClass } from "./omit";
+import { AnOmitBookStore } from "./omit";
 
 describe('Pick Utility Type', ()=>{
     it('should ', ()=>{
-        const anOmitObject = new OmitClass({
-            property2: 'A property'
+        const anOmitObject = new AnOmitBookStore({
+            prize: 100
         });
 
         expect(anOmitObject.anOmitVariable).toEqual({
-            property1: undefined,
-            property2: 'A property'
+            pageCount: undefined,
+            prize: 100
         })
     })
 })

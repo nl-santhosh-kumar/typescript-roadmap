@@ -1,14 +1,14 @@
-import { APartialClass } from "./partial"
+import { APartialBookStore } from "./partial";
 
 describe('Partial Utility Type', ()=>{
     it('should ', ()=>{
-        const aPartialObject = new APartialClass({
-            property1: 'A property 1 value'
+        const aPartialObject = new APartialBookStore({
+            pageCount: 2000
         });
 
         expect(aPartialObject.aPartialObject).toEqual({
-            property1: 'A property 1 value',
-            property2: ''
+            pageCount: 2000,
+            prize: 100
         })
     })
 })
